@@ -5,46 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Recreating Queries</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>MySite</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+<header>
+  <div class="container">
+    <h1>Responsive 101</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Intro</a></li>
+        <li><a href="#">Breakpoints</a></li>
+        <li><a href="#">Examples</a></li>
+        <li><a href="#">Practice</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="image-box">
+    <img src="media-removebg-preview.png" alt="Media Query Illustration" />
+  </section>
+
+  <section class="intro">
+    <h2>Understanding Media Queries</h2>
+    <p>Media queries allow web content to adapt to different screen sizes. They're essential for building responsive designs that look great on all devices—desktops, tablets, and phones.</p>
+  </section>
+
+  <section class="columns">
+    <div class="column">
+      <i class="ri-brain-line icon"></i>
+      <strong> What</strong><br>
+      Media queries are CSS rules that apply styles conditionally based on device characteristics like width or orientation.
     </div>
-  </header>
-
-  <main class="container">
-    <section class="image-box">
-      <p>Sample Image</p>
-      <img src="Screenshot 2025-07-22 210936.png"/>
-    </section>
-
-    <section class="intro">
-      <h2>Welcome to MySite</h2>
-      <p>This layout is responsive using media queries. Resize your browser to see it adapt to tablets and mobile screens!</p>
-    </section>
-
-    <section class="columns">
-      <div class="column">Column 1</div>
-      <div class="column">Column 2</div>
-      <div class="column">Column 3</div>
-    </section>
-  </main>
+    <div class="column">
+      <i class="ri-smartphone-line icon"></i>
+      <strong> Breakpoints</strong><br>
+      Common breakpoints include 1024px (tablet), 768px (small tablet), and 480px (mobile).
+    </div>
+    <div class="column">
+      <i class="ri-flask-line icon"></i>
+      <strong> Try It</strong><br>
+      Resize your browser and see how the layout adapts. This is the power of responsive web design!
+    </div>
+  </section>
+</main>
 
 <footer>
   <div class="container">
-    <p>&copy; 2025 MySite</p>
-    <p><a href="#">Contact us</a> | <a href="#">Privacy Policy</a></p>
+    <p>&copy; 2025 Responsive 101</p>
+    <p><a href="#">Learn More</a> | <a href="#">CSS Reference</a></p>
   </div>
 </footer>
-
 </body>
 </html>
