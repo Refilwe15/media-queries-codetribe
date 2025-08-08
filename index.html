@@ -3,64 +3,131 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recreating Queries</title>
+  <title>Refilwe Mokoena - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <header>
   <div class="container">
-    <h1>Portfolio</h1>
+    <div class="logo">RM</div>
     <nav>
       <ul>
-        <li><a href="#">Intro</a></li>
-        <li><a href="#">Breakpoints</a></li>
-
-          <li class="dropdown">
-  <a href="#">Projects <i class="ri-arrow-down-s-line"></i></a>
-  <ul class="dropdown-menu">
-    <li><a href="https://refilwe15.github.io/convertor-hub-web-app/">Convertor Calculator</a></li>
-    <li><a href="https://refilwe15.github.io/task-4.4-starter/">Task Management</a></li>
-    <li><a href="https://refilwe15.github.io/task-manager/">Task Manager</a></li>
-    <li><a href="project4.html">Portfolio Website</a></li> <!-- this should be a real HTML file in your repo -->
-  </ul>
-</li>
-
-        </li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#intro">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" class="btn btn-primary" target="_blank">Resume/CV</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<main class="container">
-  <section class="image-box">
-    <img src="media-removebg-preview.png" alt="Media Query Illustration" />
-  </section>
-
-  <section class="intro">
-    <h2>Understanding Data Protection and Legal Compliance</h2>
-    <p>Personal data must be processed lawfully, fairly, and transparently.</p>
-  </section>
-
-  <section class="columns">
-    <div class="column">
-      <i class="ri-brain-line icon"></i>
-      <strong>What</strong><br>
-      Media queries are CSS rules that apply styles conditionally based on device characteristics like width or orientation.
-    </div>
-    <div class="column">
-      <i class="ri-smartphone-line icon"></i>
-      <strong>Breakpoints</strong><br>
-      Common breakpoints include 1024px (tablet), 768px (small tablet), and 480px (mobile).
-    </div>
-<div class="column">
-      <i class="ri-contrast-drop-line icon"></i>
-      <strong>How</strong><br>
-      Use media queries to adjust layout, font sizes, and visibility of elements based on screen size.
+<main>
+  <section id="intro" class="intro-section">
+    <div class="container">
+      <div class="intro-content">
+        <div class="intro-text">
+          <p class="greeting">Hello, I'm</p>
+          <h>Refilwe Mokoena</h>
+          <p class="lead">A passionate <span class="highlight">Computer Science student</span> at Tshwane University of Technology, currently an <span class="highlight">mLab (codetribe) Trainee</span>. I specialize in building robust and innovative digital solutions.</p>
+          <a href="#" class="btn btn-secondary">Download Resume <i class="ri-download-line"></i></a>
+        </div>
+        <div class="intro-image">
+          <img src="pp.png" alt="Refilwe Mokoena" />
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="footer">
-    <p>&copy; 2023 Refilwe Mokoena. All rights reserved.</p>
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2><i class="ri-code-box-line section-icon"></i> My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="ri-javascript-fill icon"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-card">
+          <i class="ri-java-fill icon"></i>
+          <span>Java</span>
+        </div>
+        <div class="skill-card">
+          <i class="ri-html5-fill icon"></i>
+          <span>HTML5</span>
+        </div>
+        <div class="skill-card">
+          <i class="ri-css3-fill icon"></i>
+          <span>CSS3</span>
+        </div>
+        <div class="skill-card">
+          <i class="ri-database-2-fill icon"></i>
+          <span>PL/SQL</span>
+        </div>
+        <div class="skill-card">
+          <i class="ri-android-fill icon"></i>
+          <span>Kotlin</span>
+        </div>
+        <div class="skill-card">
+          <i class="ri-git-repository-fill icon"></i>
+          <span>Git</span>
+        </div>
+        <div class="skill-card">
+          <i class="ri-terminal-fill icon"></i>
+          <span>Command Line</span>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2><i class="ri-folder-open-line section-icon"></i> My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="cc-removebg-preview.png" alt="Convertor Calculator Project" />
+          <h3>Convertor Calculator</h3>
+          <p>A web application for various unit conversions.</p>
+          <a href="https://refilwe15.github.io/convertor-hub-web-app/" target="_blank" class="project-link">View Project <i class="ri-external-link-line"></i></a>
+        </div>
+        <div class="project-card">
+          <img src="istockphoto-1069238856-612x612-removebg-preview.png" alt="Task Manager Project" />
+          <h3>Task Management</h3>
+          <p>An application to help manage tasks and to-do lists.</p>
+          <a href="https://refilwe15.github.io/task-4.4-starter/" target="_blank" class="project-link">View Project <i class="ri-external-link-line"></i></a>
+        </div>
+        <div class="project-card">
+          <img src="computer-icons-task-portable-network-graphics-management-action-item-png-favpng-Qi6zdTwTbvVtGTwZP46BCZCYt-removebg-preview.png" alt="Portfolio Website Project" />
+          <h3>Portfolio Website</h3>
+          <p>This very website, built to showcase my skills and projects.</p>
+          <a href="project4.html" target="_blank" class="project-link">View Project <i class="ri-external-link-line"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="container">
+    <div class="footer-content">
+      <div class="contact-info">
+        <h3>Contact Me</h3>
+        <p>Polokwane, Limpopo, South Africa</p>
+        <p><a href="mailto:your.email@example.com">mrefilwe880@gmail.com</a></p>
+      </div>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+        <a href="https://github.com/refilwe15" target="_blank" aria-label="GitHub"><i class="ri-github-box-fill"></i></a>
+        <a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2023 Refilwe Mokoena. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
